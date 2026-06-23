@@ -65,5 +65,5 @@ docker-down: ## [docker] Stop services (data persists)
 docker-clean: ## [docker] Stop AND wipe Qdrant + Redis + Postgres volumes
 	docker compose down -v
 
-.PHONY: help setup-lite verify-lite seed api lab benchmark test clean-lite \
+.PHONY: help setup-lite verify-lite seed api lab lab-remote benchmark test clean-lite \
         setup-docker verify-docker docker-up docker-down docker-clean
